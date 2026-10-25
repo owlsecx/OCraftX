@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Build, inspect, decode, and send raw network frames
+OCraftX is an advanced network packet crafting and inspection GUI for authorised lab use. Analysts can build ARP, ICMP, TCP, UDP, and raw frames, edit bytes in a hex view, and decode protocol fields before optional AF_PACKET send. Live capture, session history, and export support hands-on protocol education and defensive packet analysis.
 
 ---
 
 ## ✨ Features
 
-- GUI multi-protocol frame crafter — ARP/ICMP/TCP/UDP/RAW with hex editor, decoder, live capture, PCAP export & AF_PACKET send
+- Multi-protocol frame crafting for ARP, ICMP, TCP, UDP, and RAW payloads
+- Real-time colour-coded hex dump with an inline hex editor before send
+- Protocol field decoder and inspector panel for structured review
+- Live packet capture via AF_PACKET on Linux (privileged)
+- Session history with PCAP export for later analysis
+- Interface and local addressing helpers for lab topologies
 
 ---
 
@@ -39,6 +44,8 @@ Build, inspect, decode, and send raw network frames
 
 ```bash
 ./OCraftX
+./OCraftX -V
+./OCraftX --help
 ```
 
 ---
